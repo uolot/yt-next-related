@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "YT next related",
+    "description": "Automagically play random related video",
+    "version": "0.1",
+
+    "content_scripts": [
+        {
+            "matches": [
+                "http://youtube.com/*", "http://www.youtube.com/*"
+            ],
+            "js": ["contentscript.js"]
+        }
+    ],
+    "web_accessible_resources": ["script.js"]
+}
